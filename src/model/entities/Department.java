@@ -3,7 +3,7 @@ package model.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Department implements Serializable {
+public class Department extends Seller implements Serializable {
     private Integer id;
     private String name;
 
@@ -46,11 +46,10 @@ public class Department implements Serializable {
 
     @Override
     public String toString() {
-        return "Department [" +
+        return "Department{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ']';
+                '}';
     }
-
 }
 
